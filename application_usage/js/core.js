@@ -39,8 +39,8 @@ function processData () {
 
 function createChart() {
     var color = d3.scale.category20();
-    var startTime = new Date((appData.startTime - 1000000) * 1000);
-    var endTime = new Date((appData.endTime + 1000000) * 1000);
+    var startTime = new Date((appData.startTime - 2000000) * 1000);
+    var endTime = new Date((appData.endTime + 2000000) * 1000);
     // create chart function
     var eventDropsChart = d3.chart.eventDrops()
     .eventLineColor(function (datum, index) {
