@@ -4,11 +4,12 @@ import json
 import re
 from nltk.stem import WordNetLemmatizer
 from nltk.corpus import stopwords
+from collections import Counter
 
 
 def extractWordsFromJson(filename):
-    data = []
     tokens = []
+    wordCount = []
     with open(filename) as dataFile:
         data = json.load(dataFile)
     for d in data:
@@ -28,9 +29,14 @@ def extractWordsFromJson(filename):
 
         #Adding words to the list of tokens
         tokens.extend(words)
+    wordCounter = Counter(tokens)
+    for word in wordCounter:
+        wordCount.append({"text": word, "size": wordCounter[word]})
+    outputFile = open("/Users/joemanley/workspace/traces_220/wordCloud/data/data.json", "w")
+    outputFile.write("var data = " + json.dumps(wordCount))
+    outputFile.close()
     return tokens
 
 
 if __name__ == '__main__':
-    print extractWordsFromJson("tweets.json")
-
+    print extractWordsFromJson("../data/tweets.json")
