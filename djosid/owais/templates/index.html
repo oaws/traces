@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <title>WordSmith</title>
+  <style type="text/css">
+  #home #home-slider .carousel-inner .nikal #video-wrap .caption .animated.fadeInRightBig {
+	color: #000;
+	font-weight: bold;
+}
+  </style>
+  {% load static %}
+  <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
+  <link href="{% static 'css/animate.min.css' %}" rel="stylesheet"> 
+  <link href="{% static 'css/font-awesome.min.css' %}" rel="stylesheet">
+  <link href="{% static 'css/lightbox.css' %}" rel="stylesheet">
+  <link href="{% static 'css/main.css' %}" rel="stylesheet">
+  <link id="css-preset" href="{% static 'css/presets/preset6.css' %}" rel="stylesheet">
+  <link href="{% static 'css/responsive.css' %}" rel="stylesheet">
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script async src="{% static 'js/backgroundVideo.js' %}"> </script>
+
+
+<script>
+    $(document).ready(function() {
+        $(element).backgroundVideo();
+    });
+</script>
+  
+  
+  <!--[if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+    <script src="js/respond.min.js"></script>
+  <![endif]-->
+  
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700' rel='stylesheet' type='text/css'>
+  <link rel="shortcut icon" href="{% static 'images/favicon.ico' %}">
+</head><!--/head-->
+
+<body>
+
+  <!--.preloader-->
+  <div class="preloader"> <i class="fa fa-circle-o-notch fa-spin"></i></div>
+  <!--/.preloader-->
+
+  <header id="home">
+    <div id="home-slider" class="carousel slide carousel-fade" data-ride="carousel">
+      <div class="carousel-inner">	
+		<div class="nikal">
+		<div id="video-wrap">
+    <video id="my-video" preload="metadata" autoplay loop>
+        <source src="{% static 'vid/osid1.mp4' %}" type="video/mp4">
+    </video>
+	          <div class="caption">
+            <h1 class="animated fadeInLeftBig">WordSmith<span> - Traces</span></h1>
+            <p class="animated fadeInRightBig">Text  -  Sentiment  -  Classify  -  Productivity</p>
+            <a data-scroll class="btn btn-start animated fadeInUpBig" href="#services">Start now</a>
+          </div>
+</div>
+</div>
+        </div>
+      </div>
+      <a class="left-control" href="#home-slider" data-slide="prev"><i class="fa fa-angle-left"></i></a>
+      <a class="right-control" href="#home-slider" data-slide="next"><i class="fa fa-angle-right"></i></a>
+
+      <a id="tohash" href="#services"><i class="fa fa-angle-down"></i></a>
+
+    </div><!--/#home-slider-->
+    <div class="main-nav">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">
+            <h1><img class="img-responsive" src="{% static 'images/logo.png' %}" alt="logo"></h1>
+          </a>                    
+        </div>
+        <div class="collapse navbar-collapse">
+          <ul class="nav navbar-nav navbar-right">                 
+            <li class="scroll"><a href="#home">Home</a></li>
+            <li class="scroll"><a href="#services">Project</a></li> 
+            <li class="scroll"><a href="http://jsfiddle.net/zx7tqkr0/4/show/" target="_blank">Analysis Engine</a></li>                     
+            <li class="scroll"><a href="http://jsfiddle.net/x5sb5jys/10/show/" target="_blank">Predictive Engine</a></li>
+            <li class="scroll"><a href="#team">Team</a></li>
+       
+          </ul>
+        </div>
+      </div>
+    </div><!--/#main-nav-->
+  </header><!--/#home-->
+  <section id="services">
+    <div class="container">
+      <div class="heading wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="300ms">
+        <div class="row">
+          <div class="text-center col-sm-8 col-sm-offset-2">
+            <h2>WordSmith - Traces</h2>
+            <p>Analaysis and Visualization of Text Based Information to help user get back to work efficiently after project interruptions and therby improve productivity.</p>
+          </div>
+        </div> 
+      </div>
+      <div class="text-center our-services">
+        <div class="row">
+          <div class="col-sm-4 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="300ms">
+            <div class="service-icon">
+              <i class="fa fa-cogs"  unselectable="on"></i>
+            </div>
+            <div class="service-info">
+              <a href="http://jsfiddle.net/zx7tqkr0/4/show/" target="_blank"><h3>Analysis Engine</h3></a>
+            </div>
+          </div>
+          <div class="col-sm-4 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="450ms">
+            <div class="service-icon">
+              <i class="fa fa-bar-chart"></i>
+            </div>
+            <div class="service-info">
+              <a href="#" target="_blank"><h3>Visualizations</h3></a>
+            </div>
+          </div>
+          <div class="col-sm-4 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="550ms">
+            <div class="service-icon">
+              <i class="fa fa-flask"></i>
+            </div>
+            <div class="service-info">
+              <a href="http://activityhistory.github.io/" target="_blank"><h3>Activity Histories</h3></a>
+            </div>
+          </div>
+          <div class="col-sm-4 wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="650ms">
+            <div class="service-icon">
+              <i class="fa fa-book"></i>
+            </div>
+            <div class="service-info">
+              <a href="https://docs.google.com/document/d/1SRBdIidAbnxmH7Xtnvi_jPgBdFnYPTAvxyvek07Ogcw/edit?usp=sharing" target="_blank"><h3>Information</h3></a>
+            </div>
+          </div>
+          <div class="col-sm-4 wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="750ms">
+            <div class="service-icon">
+              <i class="fa fa-database"></i>
+            </div>
+            <div class="service-info">
+			<a href="https://github.com/activityhistory/traces"  target="_blank"><h3>Data-Set Source</h3></a>
+
+            </div>
+          </div>
+          <div class="col-sm-4 wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="850ms">
+            <div class="service-icon">
+              <i class="fa fa-github"></i>
+
+            </div>
+            <div class="service-info">
+              <a href="https://github.com/oaws/traces"  target="_blank"><h3>Project Source Code</h3></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section><!--/#services-->
+    <section id="features" class="parallax">
+    <div class="container">
+      <div class="row count">
+        <div class="col-sm-3 col-xs-6 wow fadeInLeft" data-wow-duration="1000ms" data-wow-delay="300ms">
+          <i class="fa fa-bolt"></i>
+          <h3 class="timer">547863</h3>
+          <p>Records</p>
+        </div>
+        <div class="col-sm-3 col-xs-6 wow fadeInLeft" data-wow-duration="1000ms" data-wow-delay="500ms">
+          <i class="fa fa-calendar-o"></i>
+          <h3 class="timer">4</h3>                    
+          <p>Sources</p>
+        </div> 
+        <div class="col-sm-3 col-xs-6 wow fadeInLeft" data-wow-duration="1000ms" data-wow-delay="700ms">
+          <i class="fa fa-map-marker"></i>
+          <h3 class="timer">3</h3>                    
+          <p>Modules</p>
+        </div> 
+        <div class="col-sm-3 col-xs-6 wow fadeInLeft" data-wow-duration="1000ms" data-wow-delay="900ms">
+          <i class="fa fa-map-marker"></i>                    
+          <h3>4</h3>
+          <p>Contributors</p>
+        </div>                 
+      </div>
+    </div>
+  </section><!--/#features-->
+
+
+  <section id="team">
+    <div class="container">
+      <div class="row">
+        <div class="heading text-center col-sm-8 col-sm-offset-2 wow fadeInUp" data-wow-duration="1200ms" data-wow-delay="300ms">
+          <h2>Team</h2>
+        </div>
+      </div>
+      <div class="team-members">
+        <div class="row">
+          <div class="col-sm-3">
+            <div class="team-member wow flipInY" data-wow-duration="1000ms" data-wow-delay="300ms">
+              <div class="member-image">
+                <img src="{% static 'images/team/1.jpg' %}" alt="" width="86%" height="738" class="img-responsive">
+              </div>
+              <div class="member-info">
+                <h3>Joe Manley</h3>
+                <h4>Computer Science</h4>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-3">
+            <div class="team-member wow flipInY" data-wow-duration="1000ms" data-wow-delay="500ms">
+              <div class="member-image">
+                <img src="{% static 'images/team/2.jpg' %}" alt="" width="86%" height="738" class="img-responsive">
+
+              </div>
+              <div class="member-info">
+                <h3>Owais Siddiqui</h3>
+                <h4>Computer Science</h4>
+              </div>
+
+            </div>
+          </div>
+          <div class="col-sm-3">
+            <div class="team-member wow flipInY" data-wow-duration="1000ms" data-wow-delay="800ms">
+              <div class="member-image">
+                <img src="{% static 'images/team/3.jpg' %}" alt="" width="86%" height="738" class="img-responsive">
+
+              </div>
+              <div class="member-info">
+                <h3>Wesley Chan</h3>
+                <h4>Cognitive Science</h4>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-3">
+            <div class="team-member wow flipInY" data-wow-duration="1000ms" data-wow-delay="1100ms">
+              <div class="member-image">
+                <img src="{% static 'images/team/4.jpg' %}" alt="" width="86%" height="738" class="img-responsive">
+
+              </div>
+              <div class="member-info">
+                <h3>Srinivas Avireddy</h3>
+                <h4>Computer Science</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>            
+    </div>
+  </section><!--/#team-->
+
+  <footer id="footer">
+    <div class="footer-top wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="300ms">
+      <div class="container text-center">
+        <div class="footer-logo">
+          <a href="index.html"><img class="img-responsive" href="{% static 'images/logo.png' %}" alt=""></a>
+        </div>
+        <div class="social-icons">
+          <ul>
+            <li><a class="envelope" href="#"><i class="fa fa-envelope"></i></a></li>
+            <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li> 
+            <li><a class="dribbble" href="#"><i class="fa fa-dribbble"></i></a></li>
+            <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+            <li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>
+            <li><a class="tumblr" href="#"><i class="fa fa-tumblr-square"></i></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-6">
+            <p>WordSmith</p>
+          </div>
+          <div class="col-sm-6">
+            <p class="pull-right">Project Developed for Activity Histories - Design Lab UCSD 2016</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script type="text/javascript" src="{% static 'js/jquery.js' %}"></script>
+  <script type="text/javascript" src="{% static 'js/bootstrap.min.js' %}"></script>
+  <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=true"></script>
+  <script type="text/javascript" src="{% static 'js/jquery.inview.min.js' %}"></script>
+  <script type="text/javascript" src="{% static 'js/wow.min.js' %}"></script>
+  <script type="text/javascript" src="{% static 'js/mousescroll.js' %}"></script>
+  <script type="text/javascript" src="{% static 'js/smoothscroll.js' %}"></script>
+  <script type="text/javascript" src="{% static 'js/jquery.countTo.js' %}"></script>
+  <script type="text/javascript" src="{% static 'js/lightbox.min.js' %}"></script>
+  <script type="text/javascript" src="{% static 'js/main.js' %}"></script>
+
+</body>
+</html>

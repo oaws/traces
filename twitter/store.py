@@ -52,7 +52,7 @@ def twitterreq(url, method, parameters):
   return response
 f = open('tweets.txt','w+')
 def fetchsamples():
-  url = "https://api.twitter.com/1.1/statuses/user_timeline.json?screen_name=mars708"
+  url = "https://api.twitter.com/1.1/statuses/user_timeline.json?screen_name=BarackObama"
   parameters = []
   response = twitterreq(url, "GET", parameters)
   for line in response:
