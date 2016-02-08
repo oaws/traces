@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<html>
+    <head>
+        <link rel="stylesheet" href="css/style.css"/>
+        <link rel="stylesheet" href="css/bootstrap.css"/>
+        <title>
+            Word Cloud
+        </title>
+    </head>
+    <body>
+        <div class="modal fade" tabindex="-1" role="dialog" id="myModal">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="modalTitle"></h4>
+                    </div>
+                    <div class="modal-body" id="modalBody">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <h1 class="text-center">Word Cloud</h1>
+            <div id="wordCloud" class="text-center">
+
+            </div>
+        </div>
+        <script src="data/data.json" type="text/javascript"></script>
+        <script src="js/d3.js" type="text/javascript"></script>
+        <script src="js/d3.layout.cloud.js" type="text/javascript"></script>
+        <script src="js/jquery.min.js" type="text/javascript"></script>
+        <script src="js/bootstrap.min.js" type="text/javascript"></script>
+        <script src="js/core.js" type="text/javascript"></script>
+    </body>
+</html>
