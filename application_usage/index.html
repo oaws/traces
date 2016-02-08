@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<html>
+    <head>
+        <link rel="stylesheet" href="css/style.css" />
+        <link rel="stylesheet" href="css/bootstrap.css" />
+    </head>
+    <body>
+        <div class="container">
+            <h1>Application History</h1>
+            <div class="row">
+                <div class="col-lg-10">
+                    <div id="chart_placeholder"></div>
+                </div>
+                <div class="col-lg-2">
+                    <div class="pull-right">
+                        <button onclick="draw(1)" class="btn btn-info">Reset</button>
+                    </div>
+                    <hr>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">App Toggle</div>
+                        <div class="panel-body">
+                            <div class="form-group" data-toggle="buttons" id="appButtonGroup">
+                                <div class="checkbox">
+                                    <label>
+                                        <input class="appCheckBox" type="checkbox" checked autocomplete="off"/>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            
+            
+            
+        </div>
+        <script src="js/d3.js" type="text/javascript"></script>
+        <script src="js/jquery.min.js" type="text/javascript"></script>
+        <script src="js/bootstrap.min.js" type="text/javascript"></script>
+        <script src="js/eventDrops.js" type="text/javascript"></script>
+        <script src="js/core.js" type="text/javascript"></script>
+        <script src="data/data.json" type="text/javascript"></script>
+        <script>
+            createButtons(appData);
+            draw();
+        </script>
+    </body>
+</html>
