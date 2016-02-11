@@ -1,0 +1,7 @@
+.col-centered {    
+    float: none !important;
+    margin: 0 auto;
+}
+text:hover {
+    opacity: .7 !important;
+}
